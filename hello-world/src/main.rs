@@ -3,6 +3,10 @@ fn make_box(a: i32) -> Box<(i32, i32)> {
     return r;
 }
 
+fn add_numbers(x: i32, y: i32) -> i32 {
+    x + y
+}
+
 fn main() {
     let v = 123;
     let mut w = v;
@@ -23,4 +27,25 @@ fn main() {
 
     let m = make_box(51);
     println!("{:?}", m);
+
+    let a = [1,2,3,4,5];
+    let a1 = [0;5];
+
+    println!("{:?} --- {:?}", a, a1);
+    println!("{}", a.len());
+    println!("{}", a[3]);
+
+    let s1 = &a[0..2];
+    let s2 = &a[2..];
+    println!("{:?}", s1);
+    println!("{:?}", s2);
+
+    let mut vec = Vec::new();
+    vec.push(2);
+    vec.push(4);
+    println!("{:?}", vec);
+    println!("{}", vec[1]);
+
+    println!("{}", add_numbers(42, 11));
+    println!("Hello world");
 }
