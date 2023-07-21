@@ -35,7 +35,7 @@ fn main() {
     println!("{}", a.len());
     println!("{}", a[3]);
 
-    let s1 = &a[0..2];
+    let s1 = &a[0..=2];
     let s2 = &a[2..];
     println!("{:?}", s1);
     println!("{:?}", s2);
@@ -48,4 +48,9 @@ fn main() {
 
     println!("{}", add_numbers(42, 11));
     println!("Hello, world!!");
+
+    let names = ["Bob", "Frank", "Ferris"];
+    for (i, n) in names.iter().enumerate() {
+        println!("{} - {}", n, i);
+    }
 }
