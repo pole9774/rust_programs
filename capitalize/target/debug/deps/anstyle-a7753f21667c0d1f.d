@@ -1,0 +1,12 @@
+/home/pole/Scrivania/Programmazione_di_sistema/rust_programs/capitalize/target/debug/deps/anstyle-a7753f21667c0d1f.rmeta: /home/pole/.cargo/registry/src/github.com-1ecc6299db9ec823/anstyle-1.0.1/src/lib.rs /home/pole/.cargo/registry/src/github.com-1ecc6299db9ec823/anstyle-1.0.1/src/macros.rs /home/pole/.cargo/registry/src/github.com-1ecc6299db9ec823/anstyle-1.0.1/src/color.rs /home/pole/.cargo/registry/src/github.com-1ecc6299db9ec823/anstyle-1.0.1/src/effect.rs /home/pole/.cargo/registry/src/github.com-1ecc6299db9ec823/anstyle-1.0.1/src/reset.rs /home/pole/.cargo/registry/src/github.com-1ecc6299db9ec823/anstyle-1.0.1/src/style.rs
+
+/home/pole/Scrivania/Programmazione_di_sistema/rust_programs/capitalize/target/debug/deps/libanstyle-a7753f21667c0d1f.rlib: /home/pole/.cargo/registry/src/github.com-1ecc6299db9ec823/anstyle-1.0.1/src/lib.rs /home/pole/.cargo/registry/src/github.com-1ecc6299db9ec823/anstyle-1.0.1/src/macros.rs /home/pole/.cargo/registry/src/github.com-1ecc6299db9ec823/anstyle-1.0.1/src/color.rs /home/pole/.cargo/registry/src/github.com-1ecc6299db9ec823/anstyle-1.0.1/src/effect.rs /home/pole/.cargo/registry/src/github.com-1ecc6299db9ec823/anstyle-1.0.1/src/reset.rs /home/pole/.cargo/registry/src/github.com-1ecc6299db9ec823/anstyle-1.0.1/src/style.rs
+
+/home/pole/Scrivania/Programmazione_di_sistema/rust_programs/capitalize/target/debug/deps/anstyle-a7753f21667c0d1f.d: /home/pole/.cargo/registry/src/github.com-1ecc6299db9ec823/anstyle-1.0.1/src/lib.rs /home/pole/.cargo/registry/src/github.com-1ecc6299db9ec823/anstyle-1.0.1/src/macros.rs /home/pole/.cargo/registry/src/github.com-1ecc6299db9ec823/anstyle-1.0.1/src/color.rs /home/pole/.cargo/registry/src/github.com-1ecc6299db9ec823/anstyle-1.0.1/src/effect.rs /home/pole/.cargo/registry/src/github.com-1ecc6299db9ec823/anstyle-1.0.1/src/reset.rs /home/pole/.cargo/registry/src/github.com-1ecc6299db9ec823/anstyle-1.0.1/src/style.rs
+
+/home/pole/.cargo/registry/src/github.com-1ecc6299db9ec823/anstyle-1.0.1/src/lib.rs:
+/home/pole/.cargo/registry/src/github.com-1ecc6299db9ec823/anstyle-1.0.1/src/macros.rs:
+/home/pole/.cargo/registry/src/github.com-1ecc6299db9ec823/anstyle-1.0.1/src/color.rs:
+/home/pole/.cargo/registry/src/github.com-1ecc6299db9ec823/anstyle-1.0.1/src/effect.rs:
+/home/pole/.cargo/registry/src/github.com-1ecc6299db9ec823/anstyle-1.0.1/src/reset.rs:
+/home/pole/.cargo/registry/src/github.com-1ecc6299db9ec823/anstyle-1.0.1/src/style.rs:
