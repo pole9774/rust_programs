@@ -47,5 +47,5 @@ fn main() {
     println!("{}", vec[1]);
 
     println!("{}", add_numbers(42, 11));
-    println!("Hello world");
+    println!("Hello, world!!");
 }
