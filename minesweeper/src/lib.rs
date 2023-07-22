@@ -19,7 +19,7 @@ pub fn annotate(minefield: &[&str]) -> Vec<String> {
         for(j, elem) in row.chars().enumerate() {
             let num_ad = count_ad(minefield, i, j);
             let tmp = if elem == ' ' && num_ad > 0 {
-                num_ad.to_string().chars().nth(0).unwrap_or(' ')
+                num_ad.to_string().chars().nth(0).unwrap()
             } else {
                 elem
             };
