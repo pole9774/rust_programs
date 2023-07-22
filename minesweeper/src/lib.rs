@@ -30,6 +30,7 @@ pub fn annotate(minefield: &[&str]) -> Vec<String> {
     res
 }
 
+/*
 fn count_ad(minefield: &[&str], row: usize, col: usize) -> u32 {
     let r = minefield.len();
     let c = minefield[0].len();
@@ -40,6 +41,35 @@ fn count_ad(minefield: &[&str], row: usize, col: usize) -> u32 {
         for j in (col.saturating_sub(1))..=(col + 1).min(c - 1) {
             if i != row || j != col {
                 if minefield[i].chars().nth(j).unwrap_or(' ') == '*' {
+                    cnt += 1;
+                }
+            }
+        }
+    }
+    cnt
+}
+*/
+
+fn count_ad(minefield: &[&str], row: usize, col: usize) -> u32 {
+    let r = minefield.len();
+    let c = minefield[0].len();
+
+    let mut start_row = 0;
+    let mut start_col = 0;
+
+    let mut cnt = 0;
+
+    if row != 0 {
+        start_row = row - 1;
+    }
+    if col != 0 {
+        start_col = col - 1;
+    }
+
+    for i in start_row ..= (row+1).min(r-1) {
+        for j in start_col ..= (col+1).min(c-1) {
+            if i != row || j != col {
+                if minefield[i].chars().nth(j).unwrap() == '*' {
                     cnt += 1;
                 }
             }
