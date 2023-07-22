@@ -1,6 +1,8 @@
 use luhn::*;
 use clap::Parser;
 
+// cargo add clap --features derive
+
 #[derive(Parser, Debug)]
 #[command(author, version, about, long_about = None)]
 struct Args {
