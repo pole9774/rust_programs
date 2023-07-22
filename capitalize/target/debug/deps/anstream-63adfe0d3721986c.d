@@ -1,0 +1,14 @@
+/home/pole/Scrivania/Programmazione_di_sistema/rust_programs/capitalize/target/debug/deps/anstream-63adfe0d3721986c.rmeta: /home/pole/.cargo/registry/src/github.com-1ecc6299db9ec823/anstream-0.3.2/src/lib.rs /home/pole/.cargo/registry/src/github.com-1ecc6299db9ec823/anstream-0.3.2/src/adapter/mod.rs /home/pole/.cargo/registry/src/github.com-1ecc6299db9ec823/anstream-0.3.2/src/adapter/strip.rs /home/pole/.cargo/registry/src/github.com-1ecc6299db9ec823/anstream-0.3.2/src/adapter/wincon.rs /home/pole/.cargo/registry/src/github.com-1ecc6299db9ec823/anstream-0.3.2/src/buffer.rs /home/pole/.cargo/registry/src/github.com-1ecc6299db9ec823/anstream-0.3.2/src/macros.rs /home/pole/.cargo/registry/src/github.com-1ecc6299db9ec823/anstream-0.3.2/src/auto.rs /home/pole/.cargo/registry/src/github.com-1ecc6299db9ec823/anstream-0.3.2/src/lockable.rs /home/pole/.cargo/registry/src/github.com-1ecc6299db9ec823/anstream-0.3.2/src/raw.rs /home/pole/.cargo/registry/src/github.com-1ecc6299db9ec823/anstream-0.3.2/src/strip.rs
+
+/home/pole/Scrivania/Programmazione_di_sistema/rust_programs/capitalize/target/debug/deps/anstream-63adfe0d3721986c.d: /home/pole/.cargo/registry/src/github.com-1ecc6299db9ec823/anstream-0.3.2/src/lib.rs /home/pole/.cargo/registry/src/github.com-1ecc6299db9ec823/anstream-0.3.2/src/adapter/mod.rs /home/pole/.cargo/registry/src/github.com-1ecc6299db9ec823/anstream-0.3.2/src/adapter/strip.rs /home/pole/.cargo/registry/src/github.com-1ecc6299db9ec823/anstream-0.3.2/src/adapter/wincon.rs /home/pole/.cargo/registry/src/github.com-1ecc6299db9ec823/anstream-0.3.2/src/buffer.rs /home/pole/.cargo/registry/src/github.com-1ecc6299db9ec823/anstream-0.3.2/src/macros.rs /home/pole/.cargo/registry/src/github.com-1ecc6299db9ec823/anstream-0.3.2/src/auto.rs /home/pole/.cargo/registry/src/github.com-1ecc6299db9ec823/anstream-0.3.2/src/lockable.rs /home/pole/.cargo/registry/src/github.com-1ecc6299db9ec823/anstream-0.3.2/src/raw.rs /home/pole/.cargo/registry/src/github.com-1ecc6299db9ec823/anstream-0.3.2/src/strip.rs
+
+/home/pole/.cargo/registry/src/github.com-1ecc6299db9ec823/anstream-0.3.2/src/lib.rs:
+/home/pole/.cargo/registry/src/github.com-1ecc6299db9ec823/anstream-0.3.2/src/adapter/mod.rs:
+/home/pole/.cargo/registry/src/github.com-1ecc6299db9ec823/anstream-0.3.2/src/adapter/strip.rs:
+/home/pole/.cargo/registry/src/github.com-1ecc6299db9ec823/anstream-0.3.2/src/adapter/wincon.rs:
+/home/pole/.cargo/registry/src/github.com-1ecc6299db9ec823/anstream-0.3.2/src/buffer.rs:
+/home/pole/.cargo/registry/src/github.com-1ecc6299db9ec823/anstream-0.3.2/src/macros.rs:
+/home/pole/.cargo/registry/src/github.com-1ecc6299db9ec823/anstream-0.3.2/src/auto.rs:
+/home/pole/.cargo/registry/src/github.com-1ecc6299db9ec823/anstream-0.3.2/src/lockable.rs:
+/home/pole/.cargo/registry/src/github.com-1ecc6299db9ec823/anstream-0.3.2/src/raw.rs:
+/home/pole/.cargo/registry/src/github.com-1ecc6299db9ec823/anstream-0.3.2/src/strip.rs:
