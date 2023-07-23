@@ -51,6 +51,20 @@ impl Player {
     }
 }
 
+enum Shape {
+    Square { s: f64 },
+    Circle { r: f64 },
+    Rectangle { w: f64, h: f64 }
+}
+
+fn compute_area(shape: Shape) -> f64 {
+    match shape {
+        Shape::Square { s } => s*s,
+        Shape::Circle { r } => r*r*3.1415926,
+        Shape::Rectangle {w, h} => w*h
+    }
+}
+
 fn main() {
 
     let mut p1 = Player::new("Tarkus".to_string(), 100, 80, 42, PlayerClass::Warrior { attack_power: 71, stamina: 112 });
@@ -69,4 +83,10 @@ fn main() {
     p3.attack();
     p3.attack();
 
+
+    let s = Shape::Square { s: 4.0 };
+    let c = Shape::Circle { r: 3.0 };
+    let r = Shape::Rectangle { w: 5.0, h: 2.0 };
+
+    println!("Area -> s: {}, c: {}, r: {}", compute_area(s), compute_area(c), compute_area(r));
 }
