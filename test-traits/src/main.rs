@@ -54,8 +54,9 @@ impl Drop for Point {
 fn main() {
     let p1 = Point::new(3, 2);
     let p2 = Point::new(2, 1);
+    let p3 = p2.swap();
 
-    if p1 == p2 {
+    if p1 == p3 {
         println!("Uguali");
     } else {
         println!("Diversi");
