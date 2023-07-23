@@ -6,10 +6,10 @@ use std::env;
 
 #[repr(C)]
 #[derive(Debug, Clone, Copy)]
-struct ValueStruct { // 16
-    type_: i32,
-    val: f32,
-    timestamp: i64,
+struct ValueStruct { // 16 bytes
+    type_: i32, // 4 bytes
+    val: f32, // 4 bytes
+    timestamp: i64, // 8 bytes
 }
 
 impl ValueStruct {
@@ -26,7 +26,7 @@ impl Display for ValueStruct {
 
 #[repr(C)]
 #[derive(Debug, Clone, Copy)]
-struct MValueStruct { // 52
+struct MValueStruct { // 52 bytes
     type_: i32,
     val: [f32; 10],
     timestamp: i64,
@@ -46,7 +46,7 @@ impl Display for MValueStruct {
 
 #[repr(C)]
 #[derive(Debug, Clone, Copy)]
-struct MessageStruct { // 25
+struct MessageStruct { // 25 bytes
     message_type: i32,
     message: [u8; 21],
 }
