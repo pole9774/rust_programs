@@ -1,6 +1,12 @@
 use std::fmt::Display;
 use std::fmt::Formatter;
 
+mod timer;
+
+use timer::Timer;
+use std::thread::sleep;
+use std::time::Duration;
+
 struct Point {
     x: i32,
     y: i32
@@ -72,5 +78,14 @@ fn main() {
         println!("Uguale a 5");
     } else {
         println!("Diverso da 5");
+    }
+
+    for i in 1..5 {
+        let _t2 = Timer::new("l2".to_string());
+        sleep(Duration::new(1, 0));
+        println!("Ciclo numero {}", i);
+        if i == 3 {
+            panic!("PANIC!");
+        }
     }
 }
