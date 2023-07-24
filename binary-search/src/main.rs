@@ -55,10 +55,9 @@ fn main() {
         }
     }
 
-    for _ in 0..args.count {
-        let key = args.name;
-        println!("{}", find(&numbers, key).map_or(-1i32, |x| (x) as i32));
-    }
+    let key = args.name;
+    println!("{}", find(&numbers, key).map_or(-1i32, |x| (x) as i32));
+    
 }
 
 
