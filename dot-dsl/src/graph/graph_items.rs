@@ -30,6 +30,10 @@ pub mod edge {
                 ..self
             }
         }
+
+        pub fn get_attr(&self, key: &str) -> Option<&str> {
+            self.attrs.get(key).map(|value| value.as_str())
+        }
     }
 }
 
