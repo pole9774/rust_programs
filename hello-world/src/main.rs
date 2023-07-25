@@ -39,7 +39,7 @@ fn main() {
 
 
     let v = vec![5, 10, 14, 12, 15];
-    let names = vec!["Aria", "Prova", "Terra"];
+    let mut names = vec!["Aria".to_string(), "Prova".to_string(), "Terra".to_string()];
 
     /*
     let mut is_ok = true;
@@ -67,5 +67,15 @@ fn main() {
     for elem in v2 {
         println!("{} - {}", elem.0, elem.1);
     }
+
+    for s in names.iter_mut() {
+        s.push_str("-1");
+    }
+
+    for s in names.into_iter() {
+        println!("{}", s);
+    }
+
+    // println!("{:?}", names);
 
 }
