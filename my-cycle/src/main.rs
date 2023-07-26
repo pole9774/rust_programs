@@ -29,7 +29,7 @@ impl<I: Iterator + Clone> Iterator for MyCycle<I> {
                     self.repeat -= 1;
                 }
                 self.current.next()
-            }
+            },
             None => None,
         }
     }
@@ -46,11 +46,17 @@ fn main() {
     let it1 = MyCycle::new(v.iter(), 3);
     let it2 = MyCycle::new(v.iter(), 2);
 
-    println!("{:?}", it1.clone().zip(it2.clone()).next().unwrap());
+    //println!("{:?}", it1.clone().zip(it2.clone()).next().unwrap());
 
     let it0 = MyCycle::new(it1.clone(), 3);
 
     for v in it1.chain(it2) {
+        println!("{}", v);
+    }
+
+    println!("-------------");
+
+    for v in it0 {
         println!("{}", v);
     }
 }
