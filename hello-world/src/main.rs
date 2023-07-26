@@ -1,3 +1,5 @@
+use std::collections::HashMap;
+
 fn test(v: &[&str]) {
     for a in v {
         println!("{}", a);
@@ -76,6 +78,16 @@ fn main() {
         println!("{}", s);
     }
 
-    // println!("{:?}", names);
+
+    let v3 = vec![1, 2, 3, 4, 5];
+
+    // let v4 = v3.iter().map(|x| {(x * 2, x - 1)}).collect::<Vec<(i32,i32)>>();
+    // let v4: Vec<(i32,i32)> = v3.iter().map(|x| {(x * 2, x - 1)}).collect();
+    // let v4: Vec<_> = v3.iter().filter(|x| {*x % 2 == 0}).collect();
+
+    // let v4: Vec<_> = v3.iter().filter_map(|x| { if x % 2 == 0 { Some(x*x) } else { None } }).collect();
+    let v4 = v3.iter().filter_map(|x| { if x % 2 == 0 { Some(x*x) } else { None } }).collect::<Vec<_>>();
+
+    println!("{:?}", v4);
 
 }
