@@ -25,9 +25,8 @@ pub fn is_valid_isbn(isbn: &str) -> bool {
     if s.chars().count() != 10 {
         return false;
     }
-    for ch in isbn.chars() {
+    for ch in s.chars() {
         match ch {
-            '-' => continue,
             'X' if w==1 => t+=10,
             '0'..='9' => t += ch.to_digit(10).unwrap() * w,
             _ => return false
