@@ -38,7 +38,7 @@ impl PartialEq<i32> for Point {
     }
 }
 
-//Uguaglianza di un intero con un Point
+// Uguaglianza di un intero con un Point
 impl PartialEq<Point> for i32 {
     fn eq(&self, other: &Point) -> bool {
         return other == self;
