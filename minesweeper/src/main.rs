@@ -17,6 +17,10 @@ struct Args {
 fn main() {
     let args = Args::parse();
 
+    if args.minefield.len() != args.rows * args.pcols {
+        panic!("Wrong dimensions!");
+    }
+
     let mut s = Vec::new();
     let mut rs = Vec::<&str>::with_capacity(s.len());
     
