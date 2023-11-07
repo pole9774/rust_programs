@@ -17,15 +17,22 @@ struct Args {
 fn main() {
     let args = Args::parse();
 
-    let s = args.minefield.chars().collect::<Vec<_>>().chunks(args.pcols).map(|c| c.iter().collect::<String>()).collect::<Vec<_>>();
-
-    let mut s1 = Vec::<&str>::with_capacity(s.len());
-
-    for tmp in &s {
-        s1.push(tmp);
+    let mut s = Vec::new();
+    let mut rs = Vec::<&str>::with_capacity(s.len());
+    
+    for i in 0..args.rows {
+        let mut tmp = String::new();
+        for j in 0..args.pcols {
+            tmp.push(args.minefield.chars().nth(i*args.pcols + j).unwrap());
+        }
+        s.push(tmp);
     }
 
-    println!("{:?}", annotate(&s1));
+    for r in &s {
+        rs.push(r);
+    }
+
+    println!("{:?}", annotate(&rs));
 }
 
 // cargo run -- --rows=3 --pcols=3 --minefield="*  *  *  "
