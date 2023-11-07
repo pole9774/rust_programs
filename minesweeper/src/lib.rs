@@ -16,7 +16,7 @@ fn count_ad(minefield: &[&str], row: usize, col: usize) -> u32 {
     for i in start_row ..= (row+1).min(r-1) {
         for j in start_col ..= (col+1).min(c-1) {
             if i != row || j != col {
-                if minefield[i].chars().nth(j).unwrap() == '*' {
+                if minefield[i].as_bytes()[j] == '*' as u8 {
                     res += 1;
                 }
             }
@@ -42,14 +42,17 @@ pub fn annotate(minefield: &[&str]) -> Vec<String> {
 
     for (i, row) in minefield.iter().enumerate() {
         let mut new_row = String::new();
-        for (j, ch) in row.chars().enumerate() {
-            let n = count_ad(minefield, i, j);
-            let tmp = if ch == ' ' && n > 0 {
-                n.to_string().chars().nth(0).unwrap()
+        for (j, ch) in row.as_bytes().iter().enumerate() {
+            if *ch == '*' as u8 {
+                new_row.push('*');
             } else {
-                ch
-            };
-            new_row.push(tmp);
+                let n = count_ad(minefield, i, j);
+                match n {
+                    0 => new_row.push(' '),
+                    ad @ 1..=8 => new_row.push_str(&format!("{}", ad)),
+                    _ => panic!("Invalid count")
+                }
+            }
         }
         res.push(new_row);
     }
