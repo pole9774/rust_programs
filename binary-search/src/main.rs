@@ -7,9 +7,11 @@ use clap::Parser;
 #[command(author, version, about, long_about = None)]
 struct Args {
     #[arg(short, long)]
-    name: i32,
+    keyval: i32,
+    #[arg(short, long)]
+    filename: String,
 
-    #[arg(short, long, default_value_t = 1)]
+    #[arg(short, long, default_value_t = 2)]
     count: u8,
 }
 
@@ -21,7 +23,7 @@ fn main() {
 
     let args = Args::parse();
 
-    let file_name = "src/array.txt";
+    let file_name = args.filename;
 
     let file = match File::open(file_name) {
         Ok(file) => file,
@@ -55,10 +57,10 @@ fn main() {
         }
     }
 
-    let key = args.name;
+    let key = args.keyval;
     println!("{}", find(&numbers, key).map_or(-1i32, |x| (x) as i32));
     
 }
 
 
-// cargo run -- --name 12
+// cargo run -- --keyval 12 --filename "src/array.txt"
