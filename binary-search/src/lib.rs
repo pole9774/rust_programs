@@ -1,4 +1,4 @@
-// soluzione ricorsiva con genrics
+// soluzione ricorsiva con generics
 pub fn find<T, U>(array: U, key: T) -> Option<usize> 
 where 
     // T deve essere confrontabile
