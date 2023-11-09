@@ -35,7 +35,7 @@ fn main() {
 
     let reader = BufReader::new(file);
 
-    let mut numbers: Vec<i32> = Vec::new();
+    let mut numbers = Vec::new();
 
     for line in reader.lines() {
         match line {
