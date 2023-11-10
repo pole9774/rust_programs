@@ -12,8 +12,8 @@ impl Clock {
     }
 
     fn handle_overflow(&self) -> Self {
-        // rendi i valori positivi modulo 24h
-        let new_minutes = if self.minutes >= 0 { self.minutes % (60*24) } else { self.minutes %(60*24) + 60*24 } ;
+        // rendi i valori positivi modulo 24h e i negativi positivi modulo 24h
+        let new_minutes = if self.minutes >= 0 { self.minutes % (60*24) } else { self.minutes % (60*24) + 60*24 } ;
         Clock {minutes: new_minutes}
     }
 
@@ -51,5 +51,21 @@ impl Sub<i32> for Clock {
 
     fn sub(self, minutes: i32) -> Self {
         Clock { minutes: self.minutes - minutes }.handle_overflow()
+    }
+}
+
+impl Add<Clock> for Clock {
+    type Output = Self;
+
+    fn add(self, other: Clock) -> Self {
+        Clock { minutes: self.minutes + other.minutes }.handle_overflow()
+    }
+}
+
+impl Sub<Clock> for Clock {
+    type Output = Self;
+
+    fn sub(self, other: Clock) -> Self {
+        Clock { minutes: self.minutes - other.minutes }.handle_overflow()
     }
 }
