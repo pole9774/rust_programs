@@ -1,4 +1,4 @@
-use binary_search::{find, find_iter};
+use binary_search::{find, find_iter, find_iter_g};
 use std::fs::File;
 use std::io::{BufRead, BufReader};
 use clap::Parser;
@@ -17,7 +17,7 @@ struct Args {
 
 fn main() {
 
-    let val = find_iter(&[1, 3, 4, 6, 8, 9, 11], 5).map_or(-1i32, |x| (x) as i32);
+    let val = find_iter_g(&[1, 3, 4, 6, 8, 9, 11], 6).map_or(-1i32, |x| (x) as i32);
     println!("{}", val);
 
 

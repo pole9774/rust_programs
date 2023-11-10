@@ -30,6 +30,34 @@ where
     }
 }
 
+// Soluzione iterativa con generics
+pub fn find_iter_g<T, U>(array: U, key: T) -> Option<usize> 
+where 
+    // T deve essere confrontabile
+    T: PartialEq + PartialOrd,
+    // U deve essere un array di T da cui è possibile prendere un ref con as_ref()
+    U: AsRef<[T]> {
+
+    let array = array.as_ref();
+    let mut start: i32 = 0;
+    let mut end: i32 = array.len() as i32 - 1;
+
+    loop {
+        if start > end {
+            return None;
+        }
+
+        let mid = (start + end) / 2;
+        if array[mid as usize] == key {
+            return Some(mid as usize);
+        } else if array[mid as usize] > key {
+            end = mid - 1;
+        } else {
+            start = mid + 1;
+        }
+    }
+}
+
 
 // soluzione iterativa
 pub fn find_iter(array: &[i32], key: i32) -> Option<usize> {
