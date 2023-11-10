@@ -16,8 +16,10 @@ pub enum Error {
 impl<T: Default> CircularBuffer<T> {
     pub fn new(capacity: usize) -> Self {
         let mut buf = Vec::with_capacity(capacity);
-        for _ in 0..capacity { buf.push(T::default()); }
-        CircularBuffer{
+        for _ in 0..capacity {
+            buf.push(T::default());
+        }
+        CircularBuffer {
             data: buf,
             wpos: 0,
             rpos: 0,
@@ -58,6 +60,6 @@ impl<T: Default> CircularBuffer<T> {
         if self.len == self.data.len() {
             self.read().unwrap();
         } 
-        self.write(_element);
+        let _a = self.write(_element);
     }
 }
