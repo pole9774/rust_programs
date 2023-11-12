@@ -58,7 +58,7 @@ impl<T: Default> CircularBuffer<T> {
     pub fn overwrite(&mut self, _element: T) {
         if self.len == self.data.len() {
             self.read().unwrap();
-        } 
-        let _a = self.write(_element);
+        }
+        self.write(_element).unwrap();
     }
 }
