@@ -25,7 +25,6 @@ impl<T: Default> CircularBuffer<T> {
             rpos: 0,
             len: 0
         }
-        
     }
 
     pub fn write(&mut self, _element: T) -> Result<(), Error> {
@@ -34,7 +33,7 @@ impl<T: Default> CircularBuffer<T> {
         } else {
             self.data[self.wpos] = _element;
             self.wpos = (self.wpos + 1) % self.data.len();
-            self.len+=1;
+            self.len += 1;
             return Ok(());
         }
     }
