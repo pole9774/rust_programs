@@ -43,7 +43,7 @@ impl<I: Iterator + Clone> Clone for MyCycle<I> {
 
 fn main() {
     let v1 = vec![1, 2, 3];
-    let v2 = vec!['a', 'b', 'c'];
+    let v2 = vec![10, 11, 12];
     let it1 = MyCycle::new(v1.iter(), 3);
     let it2 = MyCycle::new(v2.iter(), 2);
 
@@ -53,8 +53,8 @@ fn main() {
 
     println!("------------");
 
-    for (el1, el2) in it1.zip(it2) {
-        println!("{}, {}", el1, el2);
+    for el in it1.chain(it2) {
+        println!("{}", el);
     }
 }
 
