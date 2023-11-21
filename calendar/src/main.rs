@@ -1,5 +1,4 @@
 use std::cmp;
-use std::mem;
 
 type Bounds = (u32, u32);
 type Schedule = Vec<Bounds>;
@@ -44,7 +43,7 @@ impl Calendar {
         };
 
         loop {
-            // println!("{:?}", heads);
+            println!("{:?}", heads);
 
             let interval = match heads {
                 (Some(v1), Some(v2)) => {
