@@ -55,16 +55,16 @@ impl Calendar {
                         heads.0 = its.0.next();
                         *v1
                     }
-                }
+                },
                 (Some(v1), None) => {
                     heads.0 = its.0.next();
                     *v1
-                }
+                },
                 (None, Some(v2)) => {
                     heads.1 = its.1.next();
                     *v2
-                }
-                (None, None) => break,
+                },
+                (None, None) => break
             };
 
             check_interval(interval);
