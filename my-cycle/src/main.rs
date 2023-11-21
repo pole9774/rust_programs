@@ -42,22 +42,19 @@ impl<I: Iterator + Clone> Clone for MyCycle<I> {
 }
 
 fn main() {
-    let v: Vec<i32> = vec![1, 2, 3];
-    let it1 = MyCycle::new(v.iter(), 3);
-    let it2 = MyCycle::new(v.iter(), 2);
+    let v1 = vec![1, 2, 3];
+    let v2 = vec!['a', 'b', 'c'];
+    let it1 = MyCycle::new(v1.iter(), 3);
+    let it2 = MyCycle::new(v2.iter(), 2);
 
-    //println!("{:?}", it1.clone().zip(it2.clone()).next().unwrap());
-
-    let it0 = MyCycle::new(it1.clone(), 3);
-
-    for v in it1.chain(it2) {
-        println!("{}", v);
+    for el in it1.clone() {
+        println!("{}", el);
     }
 
-    println!("-------------");
+    println!("------------");
 
-    for v in it0 {
-        println!("{}", v);
+    for (el1, el2) in it1.zip(it2) {
+        println!("{}, {}", el1, el2);
     }
 }
 
