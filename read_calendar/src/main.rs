@@ -1,6 +1,14 @@
 use std::fs::File;
 use std::io::{BufRead, BufReader};
 
+fn from_hour(s: &str) -> u32 {
+    let toks = s.split(":").collect::<Vec<&str>>();
+    if toks.len() != 2 {
+        panic!("hours must be in format h:mm")
+    };
+    toks[0].parse::<u32>().unwrap() * 60 + toks[1].parse::<u32>().unwrap()
+}
+
 fn main() {
     let path = "src/calendar.txt";
     
@@ -34,4 +42,6 @@ fn main() {
     println!("{:?}", bounds);
     println!("Schedule:");
     println!("{:?}", schedule);
+
+    println!("{}", from_hour(&bounds[0]));
 }
