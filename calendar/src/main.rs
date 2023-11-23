@@ -43,8 +43,6 @@ impl Calendar {
         };
 
         loop {
-            println!("{:?}", heads);
-
             let interval = match heads {
                 (Some(v1), Some(v2)) => {
                     if v1.0 > v2.0 {
