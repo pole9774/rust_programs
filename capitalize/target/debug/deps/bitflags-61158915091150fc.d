@@ -1,0 +1,11 @@
+/home/pole/Scrivania/Programmazione_di_sistema/rust_programs/capitalize/target/debug/deps/libbitflags-61158915091150fc.rmeta: /home/pole/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bitflags-2.3.3/src/lib.rs /home/pole/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bitflags-2.3.3/src/iter.rs /home/pole/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bitflags-2.3.3/src/parser.rs /home/pole/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bitflags-2.3.3/src/traits.rs /home/pole/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bitflags-2.3.3/src/public.rs /home/pole/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bitflags-2.3.3/src/internal.rs /home/pole/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bitflags-2.3.3/src/external.rs
+
+/home/pole/Scrivania/Programmazione_di_sistema/rust_programs/capitalize/target/debug/deps/bitflags-61158915091150fc.d: /home/pole/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bitflags-2.3.3/src/lib.rs /home/pole/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bitflags-2.3.3/src/iter.rs /home/pole/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bitflags-2.3.3/src/parser.rs /home/pole/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bitflags-2.3.3/src/traits.rs /home/pole/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bitflags-2.3.3/src/public.rs /home/pole/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bitflags-2.3.3/src/internal.rs /home/pole/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bitflags-2.3.3/src/external.rs
+
+/home/pole/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bitflags-2.3.3/src/lib.rs:
+/home/pole/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bitflags-2.3.3/src/iter.rs:
+/home/pole/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bitflags-2.3.3/src/parser.rs:
+/home/pole/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bitflags-2.3.3/src/traits.rs:
+/home/pole/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bitflags-2.3.3/src/public.rs:
+/home/pole/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bitflags-2.3.3/src/internal.rs:
+/home/pole/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bitflags-2.3.3/src/external.rs:

@@ -20,7 +20,6 @@ fn main() {
     let val = find_iter_g(&[1, 3, 4, 6, 8, 9, 11], 6).map_or(-1i32, |x| (x) as i32);
     println!("{}", val);
 
-
     let args = Args::parse();
 
     let file_name = args.filename;
