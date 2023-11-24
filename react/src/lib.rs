@@ -67,7 +67,7 @@ impl<'a, T: Copy + PartialEq + Display + Debug> Reactor<'a, T,> {
 
     // Creates an input cell with the specified initial value, returning its ID.
     pub fn create_input(&mut self, _initial: T) -> InputCellId {
-        let cell_id =  InputCellId(self.inputs.len());
+        let cell_id = InputCellId(self.inputs.len());
         self.inputs.push(_initial);
         cell_id
     }
