@@ -9,6 +9,9 @@ fn main() {
                 println!("Thread {} iterazione #{}", tid, i);
                 sleep(Duration::from_secs(1));
             });
+            if tid == 3 {
+                panic!("Computazione fallita");
+            }
             println!("Thread {} fatto", tid);
             tid
         })
@@ -18,8 +21,11 @@ fn main() {
     sleep(Duration::from_secs(4));
     println!("Attendo la terminazione dei thread secondari");
     v.into_iter().for_each(|h| {
-        let res = h.join().unwrap();
-        println!("Il risultato è {}", res);
+        let res = h.join();
+        match res {
+            Ok(val) => println!("Il risultato è {}", val),
+            Err(e) => println!("Error({:?})", e)
+        }
     });
     println!("Thread terminato");
 }
