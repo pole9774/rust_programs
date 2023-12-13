@@ -1,5 +1,6 @@
 {
     "rust-analyzer.linkedProjects": [
-        "./test-concorrenza2/Cargo.toml"
+        "./test-concorrenza2/Cargo.toml",
+        "./test-concorrenza3/Cargo.toml"
     ]
 }
