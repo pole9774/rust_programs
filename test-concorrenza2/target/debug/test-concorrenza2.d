@@ -1,0 +1,1 @@
+/home/pole/Scrivania/Programmazione_di_sistema/rust_programs/test-concorrenza2/target/debug/test-concorrenza2: /home/pole/Scrivania/Programmazione_di_sistema/rust_programs/test-concorrenza2/src/main.rs
